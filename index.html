@@ -7,22 +7,24 @@
         <link rel="stylesheet" type="text/css" href="index-style.css">
     </head>
     <body>
-        <nav class="navbar">
-            <div class="logo">Heechan</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="#">Other things</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <nav class="navbar">
+                <div class="logo">Heechan</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="#">Other things</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="container">
             <div class="svg-container" id="svg-container">
                 <object data="assets/world.svg" type="image/svg+xml" id="world"></object>
             </div>
-            <button class="plus-btn">
-                <img src="assets/plus.svg" alt="icon" width="24" height="24">
+            <button class="plus-btn" id="plus-btn">
+                <img src="assets/plus.svg" alt="minus" width="35" height="35">
             </button>
-            <button class="minus-btn">
-                <img src="assets/minus.svg" alt="icon" width="24" height="24">
+            <button class="minus-btn" id="minus-btn">
+                <img src="assets/minus.svg" alt="minus" width="35" height="35">
             </button>
         </div>
         <script src ="script.js"></script>

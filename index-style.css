@@ -20,6 +20,7 @@ body {
 
 .logo {
     padding: 20px;
+    margin-left: 60px;
     color: #f5f5f5;
     font-size: 24px;
     font-weight: bold;
@@ -57,20 +58,52 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-object {
+.world {
     width: 90%;
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
 
+.saved-svg {
+    position: fixed;
+    bottom: 150px;
+    left: 190px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+.recent-svg {
+    position: fixed;
+    bottom: 70px;
+    left: 190px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+.saved-txt, .recent-txt{
+    margin-top: 0.1px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.gps-svg {
+    position: fixed;
+    bottom: 162px;
+    right: 46px;
+    background-color: transparent;
+    border: none;
+}
+
 .plus-btn {
     position: fixed;
-    bottom: 80px;
+    bottom: 120px;
     right: 40px;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    margin-bottom: 40px;
 }
 
 .minus-btn {
@@ -89,5 +122,5 @@ object {
 }
 
 .blinking {
-    animation: blink 2s infinite;
+    animation: blink 1s infinite;
 }

@@ -5,17 +5,17 @@ body {
 }
 
 .nav-container {
-    position: relative;
     width 100vh;
+    position: relative;
     z-index: 10;
 }
 
 .navbar {
-    position: fixed;
     display: flex;
+    width: 100%;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 .logo {
@@ -27,9 +27,9 @@ body {
 }
 
 .nav-links {
+    display: flex;
     padding: 10px;
     list-style: none;
-    display: flex;
 }
 
 .nav-links li {
@@ -43,15 +43,15 @@ body {
 }
 
 .container {
-    position: relative;
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 
 .svg-container {
-    position: relative;
     width: 100%;
     height: 100%;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,25 +64,28 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-.saved-svg {
-    position: fixed;
-    bottom: 150px;
-    left: 190px;
-    background-color: transparent;
+.saved-svg, .recent-svg, .food-svg, .hotel-svg {
     border: none;
+    position: fixed;
+    top: 80px;
+    left: 80px;
+    background-color: transparent;
     text-align: center;
 }
 
 .recent-svg {
-    position: fixed;
-    bottom: 70px;
-    left: 190px;
-    background-color: transparent;
-    border: none;
-    text-align: center;
+    top: 160px;
 }
 
-.saved-txt, .recent-txt{
+.food-svg {
+    top: 240px;
+}
+
+.hotel-svg {
+    top: 320px;
+}
+
+.saved-txt, .recent-txt, .food-txt, .hotel-txt{
     margin-top: 0.1px;
     font-size: 15px;
     color: white;
@@ -90,52 +93,92 @@ body {
 }
 
 .gps-svg {
+    border: none;
     position: fixed;
     bottom: 162px;
     right: 46px;
     background-color: transparent;
-    border: none;
 }
 
 .plus-btn {
+    border: none;
     position: fixed;
     bottom: 120px;
     right: 40px;
     background-color: transparent;
-    border: none;
     cursor: pointer;
 }
 
 .minus-btn {
+    border: none;
     position: fixed;
     bottom: 80px;
     right: 40px;
     background-color: transparent;
-    border: none;
     cursor: pointer;
 }
 
 .overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.4);
-    display: none;
     justify-content: center;
     align-items: center;
     z-index: 20;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .box {
     width: 70%;
     height: 80%;
-    background-color: white;
     border-radius: 15px;
+    border: 4px solid white;
+    align-items: center;
+}
+
+.box-title {
+    padding: 5px;
     text-align: center;
-    opacity: 1;
+    color: white;
+    font-size: 40px;
+}
+
+.box-content {
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.image-fig {
+    float: right;
+    txt-align: center;
+}
+
+.image {
+    width: 320px;
+    height: 240px;
+    border-radius: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+.caption {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+}
+
+.description {
+    color: white;
+    font-size: 25px;
+    line-height: 1.7;
 }
 
 @keyframes blink {

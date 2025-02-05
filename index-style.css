@@ -5,7 +5,7 @@ body {
 }
 
 .nav-container {
-    width 100vh;
+    width: 100vh;
     position: relative;
     z-index: 10;
 }
@@ -155,7 +155,6 @@ body {
 
 .image-fig {
     float: right;
-    txt-align: center;
 }
 
 .image {

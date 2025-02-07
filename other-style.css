@@ -1,0 +1,104 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #00a8cc;
+    font-family: sans-serif;
+}
+
+.nav-container {
+    width 100vh;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding: 20px;
+    margin-left: 60px;
+    color: #f5f5f5;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    padding: 10px;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.passport-container {
+    width: 700px;
+    position: relative;
+    display: flex;
+}
+
+.passport-background {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    filter: brightness(0.8);
+}
+
+.random-title {
+    position: absolute;
+    z-index: 1;
+    width: 600px;
+    top: 60px;
+    left: 70px;
+    font-size: 22px;
+}
+
+.random {
+    left: 66px;
+    top: 120px;
+    position: absolute;
+    z-index: 1;
+}
+
+.links {
+    position: absolute;
+    z-index: 1;
+    left: 65px;
+    top: 375px;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.links li {
+    list-style: none;
+}
+
+
+.comp {
+    width: 250px;
+    right: 70px;
+    top: 60px;
+    position: absolute;
+    z-index: 1;
+}
